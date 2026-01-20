@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Streaming Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📹 StreamFlix</h1>
+            <button class="btn-upload" onclick="openUploadModal()">+ Upload Video</button>
+        </header>
+        <div class="player-section" id="playerSection" style="display: none;">
+            <div class="video-container">
+                <video id="videoPlayer" controls></video>
+                <div class="video-info">
+                    <h2 id="videoTitle">Video Title</h2>
+                </div>
+            </div>
+        </div>
+        <div class="video-grid" id="videoGrid">
+            <p class="empty-state">No videos yet. Upload your first video!</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
